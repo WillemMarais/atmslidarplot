@@ -1,0 +1,71 @@
+{
+    /* ************************* */
+    /* The geophysical variables */
+    /* ************************* */
+    "particulate_backscatter": {
+        "default": {
+            "min": 1.0e-8
+        },
+        "1/m 1/sr": {
+            "min": 1.0e-8
+        },
+        "1/km 1/sr": {
+            "min": 1.0e-5
+        }
+    },
+    "particulate_optical_depth": {
+        "default": {
+            "min": 0.0
+        }
+    },
+    "particulate_linear_depolarization": {
+        "default": {
+            "min": 0.0,
+            "max": 0.6
+        }
+    },
+    "particulate_molecular_optical_depth": {
+        "default": {
+            "min": 0.0
+        }
+    },
+    "attenuated_color_ratio_1064nm_532nm": {
+        "default": {
+            "min": 0.0,
+            "max": 1.0
+        }
+    },
+    /* ************************************** */
+    /* The geophysical variable uncertainties */
+    /* ************************************** */
+    "particulate_backscatter_uncertainty": {
+        "default": {
+            "min": 0.0,
+            "max": 1.0
+        }
+    },
+    "particulate_optical_depth_uncertainty": {
+        "default": {
+            "min": 0.0,
+            "max": 1.0
+        }
+    },
+    "particulate_linear_depolarization_uncertainty": {
+        "default": {
+            "min": 0.0,
+            "max": 1.0
+        }
+    },
+    "particulate_molecular_optical_depth_uncertainty": {
+        "default": {
+            "min": 0.0,
+            "max": 1.0
+        }
+    },
+    "attenuated_color_ratio_1064nm_532nm_uncertainty": {
+        "default": {
+            "min": 0.0,
+            "max": 1.0
+        }
+    }
+}

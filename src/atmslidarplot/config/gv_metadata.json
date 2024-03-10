@@ -1,0 +1,241 @@
+{
+    /* ************************* */
+    /* The geophysical variables */
+    /* ************************* */
+    "particulate_backscatter": {
+        "long_name": "particulate backscatter",
+        "units": "1/{range_unit} 1/sr",
+        "__hvplot__": {
+            "default": {
+                "call": {
+                    "x": "{time_axis}",
+                    "y": "{range_axis}"
+                },
+                "opts": {
+                    "title": "particulate backscatter {label} {group} {dimensions}"
+                }
+            },
+            "quadmesh": {
+                "call": {
+                    "cmap": "turbo",
+                    "rasterize": true,
+                    "aggregator": "mean",
+                    "logz": true,
+                    "clabel": "particulate backscatter [1/{range_unit} 1/sr]"
+                }
+            }
+        }
+    },
+    "particulate_optical_depth": {
+        "long_name": "particulate optical depth",
+        "__hvplot__": {
+            "default": {
+                "call": {
+                    "x": "{time_axis}",
+                    "y": "{range_axis}"
+                },
+                "opts": {
+                    "title": "particulate optical depth {label} {group} {dimensions}"
+                }
+            },
+            "quadmesh": {
+                "call": {
+                    "cmap": "turbo",
+                    "rasterize": true,
+                    "aggregator": "mean",
+                    "logz": false,
+                    "clabel": "particulate optical depth"
+                }
+            }
+        }
+    },
+    "particulate_linear_depolarization": {
+        "long_name": "particulate depolarization ratio",
+        "units": "",
+        "__hvplot__": {
+            "default": {
+                "call": {
+                    "x": "{time_axis}",
+                    "y": "{range_axis}"
+                },
+                "opts": {
+                    "title": "particulate depolarization ratio {label} {group} {dimensions}"
+                }
+            },
+            "quadmesh": {
+                "call": {
+                    "cmap": "turbo",
+                    "rasterize": true,
+                    "aggregator": "mean",
+                    "logz": false,
+                    "clabel": "particulate depolarization ratio"
+                }
+            }
+        }
+    },
+    "particulate_molecular_optical_depth": {
+        "long_name": "optical depth",
+        "__hvplot__": {
+            "default": {
+                "call": {
+                    "x": "{time_axis}",
+                    "y": "{range_axis}"
+                },
+                "opts": {
+                    "title": "optical depth {label} {group} {dimensions}"
+                }
+            },
+            "quadmesh": {
+                "call": {
+                    "cmap": "turbo",
+                    "rasterize": true,
+                    "aggregator": "mean",
+                    "logz": false,
+                    "clabel": "optical depth"
+                }
+            }
+        }
+    },
+    "attenuated_color_ratio_1064nm_532nm": {
+        "long_name": "particulate attenuated (532nm/1064nm)",
+        "units": "",
+        "__hvplot__": {
+            "default": {
+                "call": {
+                    "x": "{time_axis}",
+                    "y": "{range_axis}"
+                },
+                "opts": {
+                    "title": "particulate attenuated (532nm/1064nm) {label} {group} {dimensions}"
+                }
+            },
+            "quadmesh": {
+                "call": {
+                    "cmap": "turbo",
+                    "rasterize": true,
+                    "aggregator": "mean",
+                    "logz": false,
+                    "clabel": "particulate attenuated (532nm/1064nm)"
+                }
+            }
+        }
+    },
+    /* ************************************** */
+    /* The geophysical variable uncertainties */
+    /* ************************************** */
+    "particulate_backscatter_uncertainty": {
+        "long_name": "particulate backscatter uncertainty",
+        "__hvplot__": {
+            "default": {
+                "call": {
+                    "x": "{time_axis}",
+                    "y": "{range_axis}"
+                },
+                "opts": {
+                    "title": "particulate backscatter uncertainty {label} {group} {dimensions}"
+                }
+            },
+            "quadmesh": {
+                "call": {
+                    "cmap": "turbo",
+                    "rasterize": true,
+                    "aggregator": "mean",
+                    "logz": false,
+                    "clabel": "particulate backscatter uncertainty"
+                }
+            }
+        }
+    },
+    "particulate_optical_depth_uncertainty": {
+        "long_name": "particulate optical depth uncertainty",
+        "__hvplot__": {
+            "default": {
+                "call": {
+                    "x": "{time_axis}",
+                    "y": "{range_axis}"
+                },
+                "opts": {
+                    "title": "particulate optical depth uncertainty {label} {group} {dimensions}"
+                }
+            },
+            "quadmesh": {
+                "call": {
+                    "cmap": "turbo",
+                    "rasterize": true,
+                    "aggregator": "mean",
+                    "logz": false,
+                    "clabel": "particulate optical depth uncertainty"
+                }
+            }
+        }
+    },
+    "particulate_linear_depolarization_uncertainty": {
+        "long_name": "particulate depolarization ratio uncertainty",
+        "__hvplot__": {
+            "default": {
+                "call": {
+                    "x": "{time_axis}",
+                    "y": "{range_axis}"
+                },
+                "opts": {
+                    "title": "particulate depolarization ratio uncertainty {label} {group} {dimensions}"
+                }
+            },
+            "quadmesh": {
+                "call": {
+                    "cmap": "turbo",
+                    "rasterize": true,
+                    "aggregator": "mean",
+                    "logz": false,
+                    "clabel": "particulate depolarization ratio uncertainty"
+                }
+            }
+        }
+    },
+    "particulate_molecular_optical_depth_uncertainty": {
+        "long_name": "optical depth uncertainty",
+        "__hvplot__": {
+            "default": {
+                "call": {
+                    "x": "{time_axis}",
+                    "y": "{range_axis}"
+                },
+                "opts": {
+                    "title": "optical depth uncertainty {label} {group} {dimensions}"
+                }
+            },
+            "quadmesh": {
+                "call": {
+                    "cmap": "turbo",
+                    "rasterize": true,
+                    "aggregator": "mean",
+                    "logz": false,
+                    "clabel": "optical depth uncertainty"
+                }
+            }
+        }
+    },
+    "attenuated_color_ratio_1064nm_532nm_uncertainty": {
+        "long_name": "particulate attenuated (532nm/1064nm) uncertainty",
+        "__hvplot__": {
+            "default": {
+                "call": {
+                    "x": "{time_axis}",
+                    "y": "{range_axis}"
+                },
+                "opts": {
+                    "title": "particulate attenuated (532nm/1064nm) uncertainty {label} {group} {dimensions}"
+                }
+            },
+            "quadmesh": {
+                "call": {
+                    "cmap": "turbo",
+                    "rasterize": true,
+                    "aggregator": "mean",
+                    "logz": false,
+                    "clabel": "particulate attenuated (532nm/1064nm) uncertainty"
+                }
+            }
+        }
+    }
+}

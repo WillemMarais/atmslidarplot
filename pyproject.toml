@@ -1,0 +1,45 @@
+[build-system]
+requires = ["hatchling", "hatch-regex-commit"]
+build-backend = "hatchling.build"
+
+[project]
+name = "atmslidarplot"
+description = "Atmospheric lidar plotting"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+license = ""
+keywords = []
+authors = [
+  { name = "Willem Marais", email = "willem.marais@ssec.wisc.edu" },
+]
+classifiers = [
+  "Private :: Do Not Upload"
+]
+dependencies = [
+  "jsmin",
+  "hvplot",
+  "xarray",
+  "pyyaml",
+  "holoviews"
+]
+dynamic = ["version"]
+
+[project.scripts]
+
+[tool.hatch.version]
+path = "src/atmslidarplot/__about__.py"
+source = "regex_commit"
+tag = false
+check_dirty = true
+
+# Tell hatch that we can list dependencies like git+https://
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.envs.default]
+dependencies = [
+    "pytest"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/atmslidarplot"]
